@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora de médias</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/agendinhajpeg.jpg" alt="agenda em miniatura">
+            <h1>Agenda</h1>
+        </header>
+        <div>
+            <form id="form-contatos">
+                <input type="text" id="nome-contato" required placeholder="Digite o nome">
+                <input type="number" id="telefone-contato" required placeholder="Digite o telefone">
+                <button type="submit">Adicionar contato</button>
+            </form>
+        </div>
+        <div>
+            <table cellspacing="0" id="tabela-contatos">
+                <thead>
+                    <tr>
+                        <th>Nome do Contato</th>
+                        <th>Telefone de contato</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="item in list" :key="item.id">
+                        <td class="nome-contato">---</td>
+                        <td class="telefone-contato">---</td>
+                        <td>
+                            <button class="editar-contato">Editar Contato</button>
+                            <button class="remover-contato">Remover Contato</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    <script src="./main.js"></script>
+</body>
+</html>

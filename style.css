@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+    background-color: #E7E7E7;
+    margin-top: 100px;
+}
+
+header img{
+    height: 36px;
+    margin-right: 16px;
+}
+
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+table th{
+    border-bottom: 2px solid #000;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+table td {
+    text-align: center;
+    padding: 16px 0;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+@media (max-width: 648px) {
+    /* Estilos para telas menores que 768px (ex: smartphones) */
+    header h1 {
+        font-size: 32px;
+        
+    }
+    .container{
+        
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 960px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    form input,
+    form button {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Estilos para telas menores que 1024px (ex: tablets) */
+    header h1 {
+        font-size: 36px;
+        max-width: 960px;
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+    .container{
+        
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.editar-contato{
+    background-color: #acb4af;
+    font-size: 12px;
+    border: solid;
+    border-bottom: 2px solid #000;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.remover-contato{
+    background-color: rgb(207, 114, 114);
+    font-size: 12px;
+    border: solid;
+    border-bottom: 2px solid #000;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+form button{
+    background-color: #009432;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+  border-style: outset;
+  border-radius: 20px;
+}
+
+
+form input{
+    color: #6d6060;
+    font-size: 18px;
+    border: solid;
+    border-bottom: 2px solid #000;
+    padding: 24px;
+    border-radius: 20px;
+  
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    align-items:center;
+    padding-bottom: 24px;
+}
